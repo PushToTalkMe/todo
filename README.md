@@ -15,4 +15,5 @@
 Фильтрация задач
 
 Проект запускается командой `npm i && npm run start`
-Доступен на GitHub Pages.
+
+Доступен на GitHub Pages: https://pushtotalkme.github.io/todo/
