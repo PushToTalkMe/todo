@@ -1,0 +1,56 @@
+.task {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: 100%;
+  padding: 10px;
+  border-bottom: 1px solid rgb(211, 211, 211);
+  gap: 15px;
+}
+
+.task:hover {
+  opacity: 0.5;
+}
+
+.checkbox {
+  appearance: none;
+  position: relative;
+  min-width: 30px;
+  min-height: 30px;
+  margin: 0;
+  background: white;
+  border: 1px solid gray;
+  transition: 500ms;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.checkbox::after {
+  content: "\2714";
+  position: absolute;
+  top: -2px;
+  left: 5px;
+  width: 0px;
+  height: 0px;
+  font-size: 22px;
+  transition: 500ms;
+  overflow: hidden;
+  color: gray;
+}
+
+.checkbox:checked::after {
+  width: 30px;
+  height: 30px;
+  transition: 500ms;
+}
+
+.title {
+  word-break: break-all;
+  font-size: 24px;
+}
+
+.completed {
+  opacity: 0.5;
+  text-decoration: line-through;
+  transition: 500ms;
+}
